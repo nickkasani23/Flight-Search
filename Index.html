@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Ticket Search</title>
+    <style>
+      /* Add CSS styling here */
+      /* Global styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        /* Add background image */
+        background-image: url(//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 20px;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      nav a {
+        color: #333;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Main styles */
+      main {
+        /* Add background color */
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 20px;
+        /* Add padding */
+        padding: 20px;
+      }
+
+      h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      form label {
+        color: #333;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      form input[type="text"],
+      form input[type="date"],
+      form input[type="submit"] {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      form input[type="submit"] {
+        background-color: #0077ff;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      form input[type="submit"]:hover {
+        background-color: #0066cc;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      footer p {
+        color: #333;
+        font-size: 16px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flight Ticket Search</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Flights</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Search for Flights</h2>
+      <form onsubmit="return searchFlights()">
+        <label for="departure">Departure:</label>
+        <input type="text" id="departure" name="departure" required><br><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date"><br><br>
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="end-date"><br><br>
+        <input type="submit" value="Search">
+      </form>
+      <div id="flight-results"></div>
+    </main>
+    <footer>
+      <p>© 2021 Flight Ticket Search. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
